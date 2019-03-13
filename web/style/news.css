@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #fff;
+    font-size: 14px;
+}
+div {
+	box-sizing: border-box;
+}
+p{
+    color: #777777; 
+    line-height: 1.55em;
+    font-size: 18px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+body{
+    height: 100vh;
+    position: sticky;
+    background: url(../media/Casino.jpg) no-repeat center top / cover;
+}
+.heading{
+    overflow: hidden;
+}
+nav{
+    float: right;
+    padding-top: 25px;
+    letter-spacing: .1em;
+}
+header{
+    background: rgba(25, 25, 25, 0.5);
+}
+header ul{
+    padding: 0;
+	margin: 0;
+	display: block;
+}
+header ul li{
+    float: left;
+    display: block;
+    margin-left: 41px;
+    padding-bottom: 15px;
+}
+.heading a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    transition: all linear 0.35s;
+}
+.heading a:hover{
+    border-bottom: 8px solid #fff;
+}
+.section-container{
+    display: flex;
+    height: calc(100vh - 71px);
+}
+article{
+    margin: 5px 5px;
+    width: 10%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    padding: 15px;
+    transition: all 2s;
+}
+article p{
+    padding: 0;
+    margin: 0;
+}
+article:hover{
+    width: calc(0.8*1366px);
+}
+
+article div{
+    height: 150px;
+    width: calc(0.6*1366px);
+    overflow: hidden;
+}
+article img{
+    visibility: hidden;
+    transition: all linear 2s;
+    display: block;
+    float: right;
+    height: 20%;
+}
+article:hover img{
+    visibility: visible;
+}
+@media only screen and (max-width: 600px) {
+    .section-container{
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+    }
+    article{
+        margin: 5px 5px;
+        width: 90%;
+        height: 10%;
+        overflow: hidden;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        padding: 15px;
+        transition: all 2s;
+    }
+    article:hover{
+        height: 100%;
+    }
+    article div{
+        height: 100%;
+        width: 300px;
+        overflow: hidden;
+    }
+    article img{
+        float: left;
+        width: 15%;
+        visibility: hidden;
+        transition: all linear 2s;
+    }
+    article:hover img{
+        visibility: visible;
+    }
+  }
